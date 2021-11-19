@@ -3,11 +3,11 @@ body {
     padding: 0;
 }
 
-.header-conteiner {
+.header-container {
     height: 100vh;
     width: 100vw;
-    background-color: #045de9;
-    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    background-color: #141B41;
+    background-image: linear-gradient(315deg, rgba(20, 27, 65, 0.84) 0%, #306BAC 80%);
     background-position: center;
     background-size: contain;
     display: flex;
@@ -31,34 +31,47 @@ body {
     text-decoration: none;
     font-size: 20px;
     padding: 1rem 4rem;
-    border: 2px solid #000000;
+    border: 2px solid #120907;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
 
+}
+.container a:hover{
+    background: none;
+}
+.container a:visited{
+    color: unset;
 }
 
 a:hover {
-    background-color: #eeeeee;
-}a:visited{
-     color: #000000;
- }
+    background-color: #FFFCF2;
+}
 
-h1 {
+a:visited {
+    color: #000000;
+}
+
+.header-container h1 {
 
     font-size: 80px;
-    letter-spacing: 0.5px;
-    font-family: Luminari, fantasy;
-    font-variant: small-caps;
-
-}
-
-h2 {
-    font-size: 40px;
     letter-spacing: 1px;
     font-family: Luminari, fantasy;
+    font-weight: lighter;
+    color :#FFFCF2;
 
 }
 
-.checkbox-conteiner {
+.header-container h2 {
+    font-size: 40px;
+    color:#EEF9FC;
+    letter-spacing: 1px;
+    font-family: Luminari, fantasy;
+    font-weight: lighter;
+
+
+}
+
+.checkbox-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +93,7 @@ h2 {
 .checkbox .trace {
     width: 35px;
     height: 6px;
-    background-color: #000000;
+    background-color: #FFFCF2;
     position: absolute;
     transition: 0.2s ease-in-out;
 }
@@ -121,10 +134,10 @@ h2 {
 .menu-itens {
     position: fixed;
     width: 30%;
-    top:0;
-    right:0;
+    top: 0;
+    right: 0;
     height: 100vh;
-    display:flex;
+    display: flex;
     justify-content: center;
     z-index: 2;
     opacity: 0;
@@ -135,19 +148,20 @@ h2 {
 
 .menu-itens ul {
     list-style-type: none;
-    }
+}
 
 .menu-itens ul li a {
     margin: 10px 0;
-    color: #000000;
+    color: #FFFCF2;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 40px;
-    font-family: Luminari,fantasy;
+    font-family: Luminari, fantasy;
 
 }
-.menu-itens a:hover{
+
+.menu-itens a:hover {
     background: none;
 }
 
@@ -177,13 +191,81 @@ h2 {
 }
 
 #toggle:checked ~ .menu-itens {
-    border-radius: 20px;
+    border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)) center;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(8px);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.01) 100%);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.27);
     z-index: 1;
     visibility: visible;
     opacity: 1;
+}
+
+.container {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #224377;
+
+
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(8px);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255,255,255,0.1085609243697479) 100%);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.27);
+    margin: 2rem 0 2rem 0;
+    color: #EEF9FC;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.card-text {
+    width: 40%;
+    letter-spacing: normal;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #EEF9FC;
+}
+
+.footer{
+    margin : 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: normal;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #EEF9FC;
+    width: 100vw;
+    font-size: 10px;
+    height: 50px;
+    background-color: #141B41;
+    font-weight: lighter;
+
 }
