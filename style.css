@@ -36,10 +36,12 @@ body {
 
 
 }
-.container a:hover{
+
+.container a:hover {
     background: none;
 }
-.container a:visited{
+
+.container a:visited {
     color: unset;
 }
 
@@ -57,13 +59,13 @@ a:visited {
     letter-spacing: 1px;
     font-family: Luminari, fantasy;
     font-weight: lighter;
-    color :#FFFCF2;
+    color: #FFFCF2;
 
 }
 
 .header-container h2 {
     font-size: 40px;
-    color:#EEF9FC;
+    color: #EEF9FC;
     letter-spacing: 1px;
     font-family: Luminari, fantasy;
     font-weight: lighter;
@@ -202,6 +204,7 @@ a:visited {
     opacity: 1;
 }
 
+
 .container {
     height: auto;
     width: 100vw;
@@ -231,7 +234,7 @@ a:visited {
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(8px);
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255,255,255,0.1085609243697479) 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1085609243697479) 100%);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.27);
     margin: 2rem 0 2rem 0;
     color: #EEF9FC;
@@ -250,8 +253,25 @@ a:visited {
     color: #EEF9FC;
 }
 
-.footer{
-    margin : 0;
+#back-to-top {
+    border-radius: 100%;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: #141B41;
+    background-image: linear-gradient(315deg, rgba(20, 27, 65, 0.84) 0%, #306BAC 80%);
+    display: flex;
+    cursor: pointer;
+    border: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer {
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -267,5 +287,6 @@ a:visited {
     height: 50px;
     background-color: #141B41;
     font-weight: lighter;
+    z-index: 9999;
 
 }
