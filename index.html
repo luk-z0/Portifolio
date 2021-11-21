@@ -3,39 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <title>Lucas Gabriel</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-<header class="header-container">
-    <div class="header">
-        <div class="checkbox-container">
-            <div class="checkbox-wrapper">
-                <input type="checkbox" id="toggle">
-                <label class="checkbox" for="toggle">
-                    <div class="trace"></div>
-                    <div class="trace"></div>
-                    <div class="trace"></div>
-                </label>
-                <div class="menu"></div>
-                <div class="menu-itens">
-                    <ul>
-                        <li><a href="index.html" id="menu">Menu</a></li>
-                        <li><a href="" id="sobre">Sobre</a></li>
-                        <li><a href="#main" id="projetos">Projetos</a></li>
 
-                    </ul>
+<header class="header-container">
+    <ul class = "title-ul">
+        <li class ="title-il">
+            <div class="header">
+                <div class="checkbox-container">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="toggle">
+                        <label class="checkbox" for="toggle">
+                            <div class="trace"></div>
+                            <div class="trace"></div>
+                            <div class="trace"></div>
+                        </label>
+                        <div class="menu"></div>
+                        <div class="menu-itens">
+                            <ul>
+                                <li><a href="index.html" id="menu">Menu</a></li>
+                                <li><a href="#sobre-div" id="sobre">Sobre</a></li>
+                                <li><a href="#main" id="projetos">Projetos</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+                <h1>Lucas Gabriel</h1>
+                <h2>Computer science student </h2>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/lucas-gabriel-2492101a3/" target="_blank">Linkedin</a>&nbsp;<a
+                        href="https://github.com/luk-z0" target="_blank">Github</a>
+                </div>
+
             </div>
-        </div>
-        <h1>Lucas Gabriel</h1>
-        <h2>Computer science student </h2>
-        <div class="social">
-            <a href="https://www.linkedin.com/in/lucas-gabriel-2492101a3/" target="_blank">Linkedin</a>&nbsp;<a
-                href="https://github.com/luk-z0" target="_blank">Github</a>
-        </div>
-    </div>
+        </li>
+
+        <li>
+            <img  class="img-perfil" src="img/lucas.jpg" >
+        </li>
+    </ul>
 
 </header>
+<div class="sobre-container" id="sobre-div">
+    <div>
+        <h2>Minhas Informações</h2>
+        <p> Nome : Lucas Gabriel Dias da Luz <br>Data de Nascimento : 24/05/2001 <br>Email :
+            lucas1020111940@hotmail.com<br>Telefone : (81) 98656-1889 </p>
+    </div>
+
+    <div>
+        <h2>Sobre Mim!!</h2>
+        <p>
+            Olá!!
+            Me chamo Lucas Gabriel , tenho 20 anos , e atualmente curso ciência da computação.<br>
+            Tenho muitos objetivos é sonhos, gosto de musica e animes ,pois bem espero poder descobrir mais coisas.
+
+        </p>
+    </div>
+
+    <div>
+        <h2>Pontos Fortes</h2>
+        <p>
+        <ul>
+            <li>Paciente</li>
+            <li>Trabalho em equipe</li>
+            <li>Dedicado</li>
+        </ul>
+        </p>
+    </div>
+
+
+    <div>
+        <h2>Competências</h2>
+        <p>Inglês Básico , conhecimentos em linguagens como : Java , Python , HTML , CSS ,Javascript, C e C++</p>
+    </div>
+</div>
 <main class="container" id="main">
     <div class="card-container">
         <div class="card" id="projeto1" data-tilt>
@@ -54,73 +98,35 @@
         <div class="card" id="projeto2" data-tilt>
             <a href=""></a>
             <div class="card-wrapper">
-                <h2>Projeto 2</h2>
-                <p>Descrição</p>
+                <h2>GeekBlog</h2>
+                <p>Blog</p>
             </div>
         </div>
         <div class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cum dolor iste nemo saepe?
-            Aspernatur culpa dolorum ea error explicabo, itaque laboriosam nulla officiis omnis qui reiciendis, rem
-            soluta ut?
+            Um blog criado para atualizar os geeks, assuntos diversos sobre a cultura pop, e com um adicional
+            par abraçar e informar os gamers de todas as notícias de lançamentos e novidades.
         </div>
     </div>
     <div class="card-container">
         <div class="card" id="projeto3" data-tilt>
             <div class="card-wrapper">
-                <h2>Projeto 3</h2>
-                <p>Descrição</p>
+                <h2>Glassmorphism</h2>
+                <p>&nbsp;CSS</p>
             </div>
         </div>
         <div class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cum dolor iste nemo saepe?
-            Aspernatur culpa dolorum ea error explicabo, itaque laboriosam nulla officiis omnis qui reiciendis, rem
-            soluta ut?
+            Um projeto onde foi criado um painel com o estilo de vidro, glassmorphism.
         </div>
     </div>
 </main>
 
 <footer class="footer"> Realizado por Lucas Gabriel - 2021
-    <button id="back-to-top"><img src ="./img/seta.png" width="30px" height="30px"/>
+    <button id="back-to-top"><img src="./img/seta.png" width="30px" height="30px"/>
     </button>
 </footer>
-<!--<div>
-    <fieldset>
-        <label>Minhas Informações</label>
-        <p> Nome : Lucas Gabriel Dias da Luz <br>Data de Nascimento : 24/05/2001 <br>Email :
-            lucas1020111940@hotmail.com<br>Telefone : (81) 986561889 </p>
-    </fieldset>
-</div>
-<div>
-    <fieldset>
-        <label>Sobre Mim!!</label>
-        <p>
-            Olá!!
-            Me chamo Lucas Gabriel , tenho 20 anos , e atualmente curso ciência da computação.<br>
-            Tenho muitos objetivos é sonhos, gosto de musica e animes ,pois bem espero poder descobrir mais coisas.
-
-        </p>
-    </fieldset>
-</div>
-<div>
-    <fieldset>
-        <label>Pontos Fortes</label>
-        <p>
-        <ul>
-            <li>Paciente</li>
-            <li>Trabalho em equipe</li>
-            <li>Dedicado</li>
-        </ul>
-        </p>
-    </fieldset>
-</div>
-<div>
-    <fieldset>
-        <label>Competências</label>
-        <p>Inglês Básico , conhecimentos em linguagens como : Java , Python , HTML , CSS ,Javascript, C e C++</p>
-    </fieldset>
-</div>
+<!--
 --->
-<script type="text/javascript" src="vanilla-tilt.js"></script>
-<script src="script.js"></script>
+<script type="text/javascript" src="js/vanilla-tilt.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
